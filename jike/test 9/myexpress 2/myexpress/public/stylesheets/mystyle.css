@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	min-width: 460px;
+}
+
+a{
+	cursor: pointer;
+}
+
+
+.operate-news{
+	border-top: 1px solid #eee;
+	margin:1% auto;
+	display: none;
+}
+
+.all-news .news-items-con{
+	margin-bottom: 3%;
+}
+/*后台-所有新闻展示的小con*/
+.all-news .news-items-con .news-items{
+	background-color: aqua;
+}
+
+.all-news .mytable,.delete-news .mytable{
+	margin-top: 20px;
+}
+
+.delete-btn{
+
+}
+/*插入新闻的样式*/
+.insert-news .nav-items{
+	margin-bottom: 3%;
+}
+.insert-news .news-items form div,.insert-news .news-items form button {
+	margin-top: 20px;
+}
+
+/*显示*/
+.display{
+	display: block;
+}
+.nodisplay{
+	display: none;
+}
+
+
+.table th{
+	min-width: 80px;
+	text-align: center;
+}
+
+

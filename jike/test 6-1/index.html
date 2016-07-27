@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>科学计算器</title>
+    <link rel="stylesheet" href="css.css" />
+    <script>
+    </script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>计算器</h1>
+        </div>
+        <div class="frame">
+            <table action="" id="table-basic" class="table-basic">
+                <tr>
+                    <!-- 结果框 start -->
+                    <td colspan="4">
+                        <input type="text" id="EditText" class="input1">
+                    </td>
+                    <!-- 结果框 end -->
+                </tr>
+                <!-- 三角函数等的运算 start -->
+                <tbody id="science">
+                    <tr>
+                        <td>
+                            <input type="button" name="science" value="sin">
+                        </td>
+                        <td>
+                            <input type="button" name="science" value="cos">
+                        </td>
+                        <td>
+                            <input type="button" name="science" value="tan">
+                        </td>
+                        <td>
+                            <input type="button" value="back" id="backspace">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" name="science" value="asin">
+                        </td>
+                        <td>
+                            <input type="button" name="science" value="acos">
+                        </td>
+                        <td>
+                            <input type="button" name="science" value="atan">
+                        </td>
+                        <td>
+                            <input type="button" value="清屏" id="clear">
+                        </td>
+                    </tr>
+                </tbody>
+                <!-- 三角函数等的运算 end -->
+                <!-- 基本运算 start -->
+                <tr>
+                    <td>
+                        <input type="button" name="basic-num" value="7">
+                    </td>
+                    <td>
+                        <input type="button" name="basic-num" value="8">
+                    </td>
+                    <td>
+                        <input type="button" name="basic-num" value="9">
+                    </td>
+                    <td>
+                        <input type="button" name="op" value="*">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="basic-num" value="4">
+                    </td>
+                    <td>
+                        <input type="button" name="basic-num" value="5">
+                    </td>
+                    <td>
+                        <input type="button" name="basic-num" value="6">
+                    </td>
+                    <td>
+                        <input type="button" name="op" value="-">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" name="basic-num" value="1">
+                    </td>
+                    <td>
+                        <input type="button" name="basic-num" value="2">
+                    </td>
+                    <td>
+                        <input type="button" name="basic-num" value="3">
+                    </td>
+                    <td>
+                        <input type="button" name="op" value="+">
+                    </td>
+                </tr>
+                <!-- 基本运算 end -->
+                <tr>
+                    <td>
+                        <input type="button" name="basic-num" value="0">
+                    </td>
+                    <td>
+                        <input type="button" name="basic-num" id="dot" value=".">
+                    </td>
+                    <td>
+                        <input type="button" id="equal" value="=">
+                    </td>
+                    <td>
+                        <input type="button" name="op" value="/">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

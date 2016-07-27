@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    -webkit-animation: pig ease-in-out 3s infinite;
+    animation: pig ease-in-out 3s infinite;
+}
+
+@-webkit-keyframes pig {
+    from {
+        -webkit-transform: translateZ(10em) rotateX(10deg) translateY(0em) scale(0);
+    }
+    to {
+        -webkit-transform: translateZ(-20em) rotateX(60deg) translateY(20em) scale(1.5);
+    }
+}
+
+@keyframes pig {
+    from {
+        transform: translateZ(10em) rotateX(10deg) translateY(0em)  scale(0);
+    }
+    to {
+        transform: translateZ(-20em) rotateX(60deg) translateY(20em) scale(1.5);
+    }
+}
+
+.round {
+    position: relative;
+    /*相对定位*/
+    top: 150px;
+    left: 500px;
+    width: 300px;
+    height: 268px;
+    border-color: #6F3737;
+    background-color: #C5C3C3;
+    border-radius: 50%;
+}
+
+/*eye*/
+.eyeleft {
+    top: 64px;
+    left: 89px;
+}
+
+.eyeright {
+    top: 64px;
+    left: 167px;
+}
+.eyeleft,.eyeright{
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    position: absolute;/*绝对定位*/
+    background-color: #FBFBFB;
+    border-radius: 50%;
+}
+
+.eyeleft1,.eyeright1{
+    width: 37px;
+    height: 46px;
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    background-color: #151313;
+    border-radius: 50%;
+}
+
+.eyeleft2 {
+    top: 9px;
+    left: 12px;
+    background-color: #F5F2F2;
+}
+
+.eyeright2 {
+    top: 10px;
+    left: 9px;
+    background-color: #F3EDED;
+
+}
+.eyeleft2,.eyeright2{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    width: 15px;
+    height: 16px;
+}
+/*eye end*/
+
+/*nose*/
+.nose {
+    width: 65px;
+    height: 40px;
+    top: 129px;
+    left: 118px;
+    background-color: #F3EDED;
+}
+
+.nose1 {
+    width: 15px;
+    height: 20px;
+    top: 9px;
+    left: 8px;
+    background-color: #151313;
+}
+
+.nose2 {
+    width: 15px;
+    height: 20px;
+    top: 9px;
+    left: 39px;
+    background-color: #151313;
+}
+
+.nose,.nose1,.nose2{
+   border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+/*nose end*/
+
+/*mouth*/
+.mouth1 {
+    width: 95px;
+    height: 50px;
+    top: 189px;
+    left: 110px;
+    background-color: #151313;
+    border-radius: 50%;
+}
+
+.mouth2 {
+    width: 75px;
+    height: 50px;
+    top: 172px;
+    left: 109px;
+    background-color: #C5C3C3;
+    border-radius: 50%;
+}
+
+.mouth {
+    top: -18px;
+    left: -1px;
+}
+
+.mouth,.mouth1,.mouth2{
+     position: absolute;
+      z-index: 1;
+}
+/*mouth end*/

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    font-size: 20px;
+    /*文字大小*/
+    font: caption;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.shoes {
+    width: 100px;
+    height: 100px;
+    background-color: #0ad10a;
+}
+
+.shoesbox {
+    box-shadow: 10px 10px 5px #888888;
+    margin: 50px 0 50px 100px;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    /*背景颜色*/
+    padding: 10px;
+    border: 5px solid red;
+}
+
+.shoes1 {
+    width: 100px;
+    height: 100px;
+    background-color: #0ad10a;
+    margin: auto;
+}
+
+.shoesbox1 {
+    box-shadow: 10px 10px 5px #888888;
+    margin: 50px;
+    margin-left: 100px;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    /*背景颜色*/
+    padding: 10px;
+    border: 5px solid red;
+    box-sizing: border-box;
+    overflow: scroll;
+    /*移除部分为滑动显示*/
+}
+
+.col {
+    margin: 15px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    width: 650px;
+    -webkit-column-rule-style: dashed;
+    -moz-column-rule-style: dashed;
+}
+
+.con {
+    display: -webkit-flex;
+    margin: 50px;
+    background-color: red;
+    width: 300px;
+    height: 400px;
+}
+
+.first {
+    background-color: #b443e6;
+    -webkit-flex: 1;
+    height: 100px;
+}
+
+.second {
+    background-color: aqua;
+    -webkit-flex: 1;
+    height: 100px;
+}
+
+.three {
+    background-color: #4bcc47;
+    -webkit-flex: 1;
+    height: 200px;
+}
+
+.con1 {
+    display: -webkit-flex;
+    margin: 50px;
+    background-color: red;
+    height: 400px;
+    -webkit-flex-direction: column;
+    -webkit-box-orient: vertical;
+}
+
+.first1 {
+    background-color: #b443e6;
+    -webkit-box-flex: 1;
+    height: 100px;
+    direction: row;
+    /*竖直排列*/
+    -webkit-order: 3;
+}
+
+.second1 {
+    background-color: aqua;
+    -webkit-box-flex: 1;
+    height: 100px;
+    -webkit-order: 1;
+}
+
+.three1 {
+    background-color: #4bcc47;
+    -webkit-box-flex: 1;
+    height: 100px;
+    -webkit-order: 2;
+}
+
+.whole {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    background-color: #e37d26;
+    width: 300px;
+    height: 300px;
+    margin: 100px;
+}
+
+.center {
+    width: 100px;
+    height: 100px;
+    background-color: #67ef76;
+    text-align: center;
+    position: relative;
+    /* relative（父级） 是为 absolute （子级《相对于父级的绝对定位》）服务*/
+}
+
+.img1 {
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

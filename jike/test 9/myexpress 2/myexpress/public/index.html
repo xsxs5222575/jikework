@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>NEWS</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/news.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+	<!-- 整体容器 -->
+	<div class="container">
+		<!-- 首部，包含LOGO和按钮链接 -->
+		<div class="header">
+			<div class="logo-con">
+				<a href=""><div class="baidu-logo"></div></a>
+				<a href=""><div class="user"></div></a>
+				<div class="news-logo"></div>
+				<a href=""><div class="add"></div></a>
+				<a href=""><div class="find"></div></a>
+			</div>
+			<div class="items-con">
+				<div class="items"><span class="text-underline">推荐</span></div>
+				<div class="items"><span>百家</span></div>
+				<div class="items"><span>本地</span></div>
+				<div class="items"><span>图片</span></div>
+				<div class="items"><span>娱乐</span></div>
+				<div class="items"><span>社会</span></div>
+				<div class="items"><span>军事</span></div>
+				<div class="items"><span>女人</span></div>
+				<div class="items"><span>搞笑</span></div>
+				<div class="items"><span>科技</span></div>
+				<div class="items items-last turn-to-back"><span>转到后台</span></div>
+			</div>
+		</div>
+		<!-- 新闻部分，用来显示数据库中已经有的新闻 -->
+		<div class="content">
+			<div class="content-con row">
+				<div class="content-pic col-md-2"><img alt="暂无图片" /></div>
+				<div class="content-right col-md-8">
+					<div class="content-title"><span></span></div>
+					<div class="content-content"><p></p></div>
+					<div class="content-addtime"><span></span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="javascripts/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="javascripts/news.js"></script>
+</body>
+</html>

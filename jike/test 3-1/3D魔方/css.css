@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.view {
+    -webkit-perspective: 1000px;
+    width: 168px;
+    height: 168px;
+    margin: 80px auto 0 auto;
+}
+
+
+/*flat 所有子元素在2d平面进行呈现  preserve-3d 所有子元素在3d空间中呈现*/
+
+.box {
+    /*兼容chrome、firefox、Opera浏览器*/
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -webkit-animation: animation ease-in-out 3s infinite;
+    -moz-animation: animation ease-in-out 3s infinite;
+    -o-animation: animation ease-in-out 3s infinite;
+    -webkit-transform-origin: 80px 80px 0;
+    -webkit-transform: rotateX(-20deg) rotateY(-20deg);
+    transform-origin: 80px 80px 0;
+    transform: rotateX(-20deg) rotateY(-20deg);
+    -moz-transform-origin: 80px 80px 0;
+    -moz-transform: rotateX(-20deg) rotateY(-20deg);
+    -o-transform-origin: 80px 80px 0;
+    -o-transform: rotateX(-20deg) rotateY(-20deg);
+}
+
+
+/*chrome旋转样式*/
+
+@-webkit-keyframes animation {
+    from {
+        -webkit-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+    to {
+        -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+
+/*firefox旋转样式*/
+
+@-moz-keyframes animation {
+    from {
+        -moz-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+    to {
+        -moz-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+
+/*Opera旋转样式*/
+
+@-o-keyframes animation {
+    from {
+        -o-transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+    to {
+        -o-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes animation {
+    from {
+        transform: translateZ(-10em) rotateX(0) rotateY(0deg);
+    }
+    to {
+        transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.box > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*rotate 旋转   translate 平移*/
+
+/*兼容chrome、firefox、Opera浏览器*/
+.one {
+    -webkit-transform: translateX(0px)translateZ(83px)rotateX(0deg);
+    transform: translateX(0px)translateZ(83px)rotateX(0deg);
+    -moz-transform: translateX(0px)translateZ(83px)rotateX(0deg);
+    -o-transform: translateX(0px)translateZ(83px)rotateX(0deg);
+}
+
+.two {
+    -webkit-transform: rotateY(90deg)translateZ(66px)translateX(1px);
+    transform: rotateY(90deg)translateZ(66px)translateX(1px);
+    -moz-transform: rotateY(90deg)translateZ(66px)translateX(1px);
+    -o-transform: rotateY(90deg)translateZ(66px)translateX(1px);
+}
+
+.three {
+    -webkit-transform: translateY(0px)translateZ(83px)rotateX(-90deg);
+    transform: translateY(0px)translateZ(83px)rotateX(-90deg);
+    -moz-transform: translateY(0px)translateZ(83px)rotateX(-90deg);
+    -o-transform: translateY(0px)translateZ(83px)rotateX(-90deg);
+}
+
+.four {
+    -webkit-transform: rotateY(180deg)translateZ(67px)translateX(17px);
+    transform: rotateY(180deg)translateZ(67px)translateX(17px);
+    -moz-transform: rotateY(180deg)translateZ(67px)translateX(17px);
+    -o-transform: rotateY(180deg)translateZ(67px)translateX(17px);
+}
+
+.five {
+    -webkit-transform: rotateY(-90deg)translateZ(83px)translateX(16px);
+    transform: rotateY(-90deg)translateZ(83px)translateX(16px);
+    -moz-transform: rotateY(-90deg)translateZ(83px)translateX(16px);
+    -o-transform: rotateY(-90deg)translateZ(83px)translateX(16px);
+}
+
+.six {
+    -webkit-transform: translateZ(-67px)translateY(149px)rotateX(90deg);
+    transform: translateZ(-67px)translateY(149px)rotateX(90deg);
+    -moz-transform: translateZ(-67px)translateY(149px)rotateX(90deg);
+    -o-transform: translateZ(-67px)translateY(149px)rotateX(90deg);
+}
+/*one子集div样式*/
+.one>div,.two>div,.three>div ,.four>div,.five>div,.six>div{
+width: 50px;
+height: 50px;
+float: left;
+border-style: groove;
+border-color: #420A0A;
+
+}
+
+.one>div {
+    background-color: #12E451;
+}
+.two>div {
+    background-color: #392EA7;
+}
+.three>div {
+    background-color: #A72E4B;
+}
+.four>div {
+    background-color: #CBCC30;
+}
+.five>div {
+    background-color: #B41CE8;
+}
+.six>div {
+    background-color: #1A161B;
+}
+/*one子集div样式 end*/

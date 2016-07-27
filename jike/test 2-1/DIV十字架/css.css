@@ -1,0 +1,87 @@
+﻿.outer {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left:50%;
+    top:50%; 
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+.top {
+    border-style: groove;
+    opacity: 0.8;  /*透明度*/
+    border-radius: 10px;  /*圆角*/
+    width: 100px; 
+    height: 100px;
+    background-color: #FF0000;
+    border-color: #FF0000;
+    position: absolute;
+    top: 118px;
+    left: 225px;
+    display: inline-block;/*内联块元素，既不换行又可以使用块元素所拥有的属性*/
+}
+
+.down {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-style: groove;
+    opacity: 0.8;
+    border-radius: 10px;
+    background-color: #00FF00;
+    border-color: #00FF00;
+    top: 330px;
+    left: 225px;
+    display: inline-block;
+}
+
+.left {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-style: groove;
+    opacity: 0.8;
+    border-radius: 10px;
+    background-color: #FFCC00;
+    border-color: #FFCC00;
+    top: 225px;
+    left: 117px;
+    display: inline-block;
+}
+
+.right {
+	position: relative;
+    width: 100px;
+    height: 100px;
+    border-style: groove;
+    opacity: 0.8;
+    border-radius: 10px;
+    background-color: #0000FF;
+    border-color: #0000FF;
+    top: 225px;
+    left: 330px;
+    display: inline-block;
+}
+
+.conter {
+	position: absolute;
+    width: 100px;
+    height: 100px;
+    border-style: groove;
+    opacity: 0.8;
+    border-radius: 10px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    top: 225px;
+    left: 225px;
+    display: table;
+    vertical-align: middle; /*垂直居中*/
+}
+
+.conter1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}

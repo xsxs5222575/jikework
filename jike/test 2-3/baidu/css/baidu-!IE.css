@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    font-family: arial;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.nav a {
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.nav a:hover {
+    color: #00c;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    display: inline-block;
+    color: #333;
+}
+
+.special {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #3385ff;
+    height: 24px;
+    width: 60px;
+    text-align: center;
+}
+
+.wrapper {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.logo-container img {
+    height: 129px;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.searcharea {
+    box-sizing: border-box;
+    border: solid 1px #3385FF;
+    padding: 0;
+    width: 642px;
+    margin: 0 auto;
+    height: 38px;
+}
+
+.serachbox {
+    display: inline-block;
+    margin: 0;
+    width: 540px;
+    height: 36px;
+    padding-left: 10px;
+    float: left;
+    outline: none;
+    border: none;
+}
+
+.searcharea:hover {
+    border-color:#999;
+}
+
+.serachbotton {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    width: 100px;
+    height: 36px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: #3385FF;
+    font-size: 15px;
+}
+
+.serachbotton:hover {
+    background-color: #317ef3;
+}
+
+.foot {
+    height: 60px;
+    width: 100%;
+    margin-top: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    height: 100%;
+    width: 640px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.center img {
+    float: left;
+}
+
+.text {
+    float: left;
+    font-size: 12px;
+    font-family: arial;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.text p b {
+    color: #4c4c4c;
+}
+
+.text span {
+    color: #999;
+}
+
+.link-group {
+    margin-top: 5px;
+}
+
+.link-group a {
+    color: #272727;
+    font-size: 12px;
+    font-family: arial;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.right {
+    height: 100%;
+    float: left;
+}
+
+.anotation {
+    color: #666;
+    font-size: 12px;
+    font-family: arial;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.anotation a {
+    color: #666;
+    font-size: 12px;
+    font-family: arial;
+    text-decoration: underline;
+}
